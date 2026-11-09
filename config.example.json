@@ -1,0 +1,21 @@
+{
+  "project": "호텔 앱 벤치마킹",
+  "device": "mobile",
+  "languages": ["ko"],
+  "maxShots": 20,
+  "measureFonts": false,
+  "screens": [
+    { "name": "홈" },
+    { "name": "리스트", "find": ["객실", "rooms?", "패키지", "packages?", "offers?"], "minPrices": 0 },
+    { "name": "상세", "from": "리스트", "click": "price" }
+  ],
+  "sites": [
+    { "name": "예시 호텔 A", "group": "호텔", "url": "https://www.example.com/" },
+    {
+      "name": "예시 호텔 B",
+      "group": "호텔",
+      "url": "https://www.example.org/",
+      "urls": { "리스트": "https://www.example.org/rooms" }
+    }
+  ]
+}

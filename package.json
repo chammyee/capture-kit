@@ -1,0 +1,19 @@
+{
+  "name": "capture-kit",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Capture website screens with your local Chrome and place them in Figma through Figma MCP.",
+  "type": "module",
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "export": "node scripts/export.mjs",
+    "upload": "node scripts/upload.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "1.65.0",
+    "sharp": "0.35.5"
+  },
+  "license": "MIT",
+  "repository": "github:chammyee/capture-kit"
+}
